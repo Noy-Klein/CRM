@@ -1,32 +1,236 @@
-.App {
-  text-align: center;
+body{
+  font-family: Montserrat;
+  background-color: #ecf0f1;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h2{
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.arrows{
+  margin-left: 850px;
+  display: inline-block;
+}
+
+.categories{
+  background-color: #F7CE3E;
+  height: 25px;
+}
+
+.changes{
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.select{
+  display: block;
+}
+
+.updateBtn{
+  color: #F7CE3E;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.updateBtn:hover{
+  color: rgb(0, 0, 0);
+}
+
+.none{
+  visibility: hidden;
+  height: 18px;
+}
+
+.btn{
+  margin: 20px;
+}
+
+.dialogbtn{
+  background-color: #F7CE3E;
+  color: black;
+  /* font-size: 16px; */
+  border: none;
+  font-weight: bolder;
+}
+
+.page{
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.Input{
+  width: 170px;
+  height: 20px;
+  border-radius: 5%;
+  border: none;
+  margin-bottom: 12.2px;
+}
+
+.selectOfAdd{
+  display: block;
+}
+
+.addInput{
+  margin-bottom: 15px;
+}
+
+.AddBtn{
+  background-color: #F7CE3E;
+  color: black;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  font-weight: bolder;
+}
+
+.link{
+  text-decoration: none;
+  margin: 10px;
   color: white;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.nav{
+  background-color: #0a1612;
+  opacity: 0.7;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dialog{
+  width: 300px;
+  text-align: center;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+.changeBtns{
+  display: block;
+}
+
+.searchText{
+  float: left;
+  width: 200px;
+  height: 20px;
+  border-radius: 5%;
+}
+
+.options{
+  float: left;
+  height: 25px;
+}
+
+.container{
+  display: grid;
+}
+
+.name{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.surname{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.country{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.firstcontact{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.sold{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.owner{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.email{
+  text-align: center; 
+  display: inline-block;
+  width: 170px;
+}
+
+.closeB{
+  float: right;
+}
+
+.updateB{
+  float: left;
+}
+
+.badgeContainer{
+  display: flex;
+  flex-direction: row;
+  /* justify-items: space-around; */
+}
+
+.badge{
+  width: 42%;
+  margin: 1%;
+  margin-left: 18px;
+}
+
+.order{
+  display: inline-block;
+  font-size: 12px;
+}
+
+.info{
+  margin-left:5px;
+}
+
+.sum{
+  font-size: 27px;
+}
+
+.chart1{
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.chart2{
+  width: 800px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.chart3{
+  width: 800px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.chart4{
+  width: 400px;
+  height: 250px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.salesLegend{
+  margin-top: 2px;
+}
+
+.header{
+  font-weight: bolder;
 }

@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Clients from './components/clients';
+import Actions from './components/actions';
+import Analystics from './components/analystics';
 import './App.css';
+import Landing from './components/landing';
+// import Loader from './components/sub_components/update/loader';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <div className='nav'>
+            <Link to='/clients' className='link'>Clients</Link>
+            <Link to='/actions' className='link'>Actions</Link>
+            <Link to='/analystics' className='link'>Analystics</Link>
+          </div>
+          <Route exact path='/' component={Landing}></Route>
+          <Route exact path='/clients' component={Clients}></Route>
+          <Route exact path='/actions' component={Actions}></Route>
+          <Route exact path='/analystics' component={Analystics}></Route>
+          {/* <Route exact path='/load' component={Loader}></Route> */}
+        </div>
+      </Router>
     );
   }
 }
