@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-let SERVER_PORT = 2000;
+let SERVER_PORT = process.env.PORT || 2000;
 
 const app = express();
 
@@ -11,6 +11,7 @@ app.use(express.static('public'));
 app.use(express.static('node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('build'));
 
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*')
