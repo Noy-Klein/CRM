@@ -17,7 +17,7 @@ class Clients extends Component {
     }
 
     componentWillMount = async () => {
-        let data = await Axios.get('http://localhost:2000/clients');
+        let data = await Axios.get('/clients');
         this.setState({ clients: data.data });
     }
 
@@ -28,7 +28,7 @@ class Clients extends Component {
         let demoClients = [...this.state.clients]
         demoClients[index][prop] = value;
         Axios({
-            url: 'http://localhost:2000/clients/' + id,
+            url: '/clients/' + id,
             method: 'put',
             data: {
                 client: demoClients[index]
@@ -48,7 +48,7 @@ class Clients extends Component {
         console.log(confirm)
         if (confirm === true) {
             Axios({
-                url: 'http://localhost:2000/clients/' + clientToDelete._id,
+                url: '/clients/' + clientToDelete._id,
                 method: 'delete',
                 params: {
                     client: clientToDelete

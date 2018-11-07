@@ -14,7 +14,7 @@ class Badges extends Component {
     }
 
     componentWillMount = async () => {
-        let data = await Axios.get('http://localhost:2000/clients');
+        let data = await Axios.get('/clients');
         this.setState({ clients: data.data });
     }
 
